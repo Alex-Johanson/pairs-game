@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    background-color: #31495e;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+padding: 0;
+border: none;
+background-color: transparent;
+cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 150px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.flex {
+    display: flex;
+}
+
+.pairs-menu-top {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.title,
+.heading,
+.text,
+.best-time {
+    margin: 0;
+    color: #f6f2dc;
+}
+
+.title {
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pairs-menu-bottom {
+    /* margin: 0 auto; */
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-level-form {
+    margin-left: auto;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill-level {
+    width: 150px;
+}
+
+
+datalist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* writing-mode: vertical-lr; */
+    width: 150px;
+    color: whitesmoke;
+  }
+
+/* input[type="range"] {
+    appearance: slider-vertical;
+} */
+
+
+.game {
+    margin: 0 auto;    
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+}
+
+.card {
+    margin-bottom: 6%;
+    padding: 5% 1% 5% 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    /* height: 40%; */
+    font-size: 36px;
+    font-weight: 600;    
+    color: transparent;
+    border-radius: 16px;
+    box-shadow:  10px 10px 25px #273a4b, -10px -10px 25px #3b5871;
+    transition: transform .3s, box-shadow .3s, color .5s, ease-in-out;
+    cursor: pointer;
+}
+
+.card.open {
+    color: cornflowerblue;
+    box-shadow: inset 10px 10px 25px #273a4b, inset -10px -10px 25px #3b5871;
+    transform: scale(0.99);
+}
+
+.card.success {
+    color: rgb(255, 183, 0);
+    box-shadow: inset 10px 10px 25px #273a4b, inset -10px -10px 25px #3b5871;
+    transform: scale(1.00125);
+}
